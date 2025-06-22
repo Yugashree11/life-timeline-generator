@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Life Event</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Add Life Event</h1>
+  <form action="insert-event.php" method="POST">
+    <input type="text" name="title" placeholder="Title" required><br>
+    <input type="date" name="event_date" required><br>
+    <textarea name="description" placeholder="Event Description" required></textarea><br>
+    <select name="category" required>
+      <option value="Education">Education</option>
+      <option value="Personal">Personal</option>
+      <option value="Career">Career</option>
+      <option value="Goal">Goal</option>
+    </select><br>
+    <select name="status">
+      <option value="planned">Planned</option>
+      <option value="achieved">Achieved</option>
+      <option value="missed">Missed</option>
+    </select><br>
+    <input type="submit" value="Add Event">
+  </form>
+</body>
+</html>
